@@ -2,13 +2,26 @@ import React,{useState} from 'react'
 
 const Header = () => {
     const [count,setCount] = useState(0)
+    const [name,setName] = useState('')
+    const [isLogged, setIsLogged] = useState(true)
+    const [color, setcolor]= useState()
     console.log(count)
   return (
     <div>
+
         <p>{count}</p>
         <button onClick={()=>setCount(count+4)}>increment</button>
         <button onClick={()=>setCount(count-4)}>decrement</button>
-        
+        <h3><input type="text" onChange={(e)=>setName(e.target.value)} /></h3>
+        <h1>{name}</h1>
+        <input type={isLogged?'password':'text'}/>
+        <button onClick={()=>setIsLogged(!isLogged)}>show</button>
+        <p style={{backgroundColor:color}}>this is color changing para</p>
+        <button onClick={()=>setcolor('red')}>RED</button>
+        <button onClick={()=>setcolor('pink')}>pink</button>
+        <button onClick={()=>setcolor('green')}>green</button>
+
+
       
     </div>
   )
