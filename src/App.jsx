@@ -19,18 +19,18 @@ function App() {
 
   return (
     <>
-    {/* <CartContext.Provider value={[cart,setCart]}> */}
+    <CartContext.Provider value={[cart,setCart]}>
     <Header cout={cart.length}/>
-    {/* <ToastContainer position="top-right" autoClose={3000} /> */}
+    <ToastContainer position="top-right" autoClose={3000} />
     <Routes>
       <Route path='/' element={<Homepage toasfy={handleAddToCartToasfy()}/> } />
-      {/* <Route path='/home' element={<Homepage toasfy={handleAddToCartToasfy()}/> }/>
+      <Route path='/home' element={<Homepage toasfy={handleAddToCartToasfy()}/> }/>
       <Route path='/shop' element={<Shop toasfy={handleAddToCartToasfy()}/>} />
       <Route path='/cart' element={<Cart toasfy={handleAddToCartToasfy()}/>}/>
       <Route path='/:id' element={<Productdetails toasfy={handleAddToCartToasfy()}/>}/>
-    </Routes> */}
+    </Routes>
     <Footer/>
-    {/* </CartContext.Provider> */}
+    </CartContext.Provider>
     </>
   )
 }
