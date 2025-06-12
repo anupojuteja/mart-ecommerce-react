@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import  Header from './Components/Header'
-// import { Homepage } from './Componets/Homepage'
-// import { Shop } from './Componets/Shop'
-// import { Cart } from './Componets/Cart'
-// import { Footer } from './Componets/Footer'
-// import { Productdetails } from './Componets/ProductDetails'
-// import { CartContext } from './Componets/CartContext'
+import { Shop } from './Components/Shop'
+import { Cart } from './Componets/Cart'
+import { Footer } from './Componets/Footer'
+import { Productdetails } from './Componets/ProductDetails'
+import { CartContext } from './Componets/CartContext'
 import { useState } from 'react'
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Homepage } from './Components/Homepage'
 
 function App() {
   const [cart,setCart]=useState([])
