@@ -35,8 +35,9 @@ import watchSlide from "./Images/watch-07.png";
 
 import Car from './Images/car-solid.svg'
 import Card from './Images/creditcard.svg'
-import Headphones from './Images/headphones.svg'
+import Headphones from './images/headphones.svg'
 import Shiled from './Images/shieldhalved.svg'
+
 
 export const SliderData = [
   {
