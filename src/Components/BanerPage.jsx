@@ -1,4 +1,4 @@
-import '../Componets/BanerPage.css'
+import './BanerPage.css'
 export const BanerPage=({title})=>{
     return(
         <div className='banerImageConatiner'>
