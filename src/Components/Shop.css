@@ -1,0 +1,19 @@
+.shopeFilterSearchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+.shopSearchContainer{
+    position: relative;
+}
+.shopSearchContainer input{
+    width:650px ;
+    height: 40px;
+    border: none;
+    border-radius: 18px;
+    background-color: rgba(128, 128, 128, 0.212);
+    padding: 20px;
+    color: black;
+}
