@@ -1,5 +1,5 @@
  import { useEffect, useState } from "react";
-import { products } from "../assets/products";
+import { products } from "../assets/Products";
 import { Product } from "./Product";
 import './Shop.css'
 import { BanerPage } from "./BanerPage";
