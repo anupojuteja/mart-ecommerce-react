@@ -17,3 +17,26 @@
     padding: 20px;
     color: black;
 }
+.shopeFilterSearchContainer button{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+.shopFilterContainer {
+  display: inline-block;
+}
+.shopFilterContainer option{
+    background-color: white;
+    color: black;
+}
+.shopFilterContainer select{
+  background-color: navy;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+} 
