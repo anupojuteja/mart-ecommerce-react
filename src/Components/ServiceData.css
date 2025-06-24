@@ -1,0 +1,10 @@
+.serviceContainer { 
+    margin: auto;
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+}
