@@ -1,6 +1,6 @@
 // named function 
 import { serviceData } from "../assets/products"
-import '../Componets/ServiceData.css'
+import '../Components/'
 
 export const Servicedata = () => {
     return (
