@@ -25,4 +25,4 @@ const Header = ({count}) => {
   )
 }
 
-export default Header
+export default Header;
