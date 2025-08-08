@@ -3,6 +3,8 @@ async function data () {
     const data = await res.json();
 }
 
+
+
 async function getUser() {
   const response = await fetch('https://api.example.com/user');
   const user = await response.json();
