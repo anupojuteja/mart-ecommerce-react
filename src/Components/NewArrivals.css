@@ -1,0 +1,15 @@
+.productsContainerNewArrivals{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 50px 100px;
+    gap: 25px;
+    background-color: white;
+}
+.NameNewArrivals{
+    margin-bottom:0%;
+    text-align: center;
+    padding-top: 60px;
+    background-color: white;
+}
