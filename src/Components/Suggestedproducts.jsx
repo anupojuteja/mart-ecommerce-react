@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { products } from "../assets/products";
-import './Suggestedproductss.css'
+import './Suggestedproducts.css'
 import './Hover.css'
 import { Product } from "./Product";
 

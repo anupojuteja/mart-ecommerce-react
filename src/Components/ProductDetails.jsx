@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { products } from "../assets/products";
 import { useParams } from "react-router-dom";
 import './ProductDetails.css'
-import { SuggistedProduct } from "./SuggistedProducts";
+import { SuggistedProduct } from "./SuggestedProducts";
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
 import { BanerPage } from "./BanerPage";

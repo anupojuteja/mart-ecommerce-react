@@ -1,5 +1,5 @@
 import { discoutProducts } from "../assets/products"
-import { ProductsCard } from "./ProductsCard"
+import { ProductsCard } from "./ProductCards"
 import '../Componets/Bigdiscount.css'
 
 export const Bigdiscount = ()=>{
