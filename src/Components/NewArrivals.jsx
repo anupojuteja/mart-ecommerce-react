@@ -1,6 +1,7 @@
-import '../Componets/NewArrivals.css'
+
 import { electronic } from "../assets/filterArray"
 import { ProductsCardNewBest } from "./ProductsCardNewBest"
+import "src\Components\NewArrivals.css"
 
 export const NewArrivals = ()=>{
     return(
