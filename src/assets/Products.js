@@ -33,10 +33,10 @@ import wireless04 from "./Images/wireless-04.png";
 import sofaSlide from "./Images/hero-img.png";
 import watchSlide from "./Images/watch-07.png";
 
-import Car from '../Images/car-solid.svg'
+import Car from "./Images/car-solid.svg"
 import Card from './Images/creditcard.svg'
 import Headphones from './images/headphones.svg'
-import Shiled from './Images/shieldhalved.svg'
+import Shiled from './images/shieldhalved.svg'
 
 
 export const SliderData = [
