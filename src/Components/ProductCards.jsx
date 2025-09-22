@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './ProductsCard.css'
+import './ProductCards.css'
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
 import { toast } from 'react-toastify';
