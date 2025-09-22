@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import { products } from "../assets/products";
+import { products } from "../assets/Products.js";
 import { useParams } from "react-router-dom";
 import './ProductDetails.css'
-import { SuggistedProduct } from "./SuggestedProducts";
+import { Suggestedproducts, SuggistedProduct } from "./SuggestedProducts";
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
 import { BanerPage } from "./BanerPage";
 import { toast, ToastContainer } from "react-toastify";
 
-export const Productdetails = () => {
+export const ProductDetails = () => {
   const [product, setProduct] = useState([]);
   const [reviewlan, setreviewlan] = useState(0);
   const [activeTab, setactiveTab] = useState('discription');
@@ -101,7 +101,7 @@ export const Productdetails = () => {
               </div>
             </div>
             <div>
-              <SuggistedProduct likeid={item.category} currentid={item.id}/>
+              <Suggestedproducts likeid={item.category} currentid={item.id}/>
             </div>
           </div>
         ))}
