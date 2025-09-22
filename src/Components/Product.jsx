@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { CartContext } from './CartContext.jsx';
+import { CartContext } from './CartContext';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import '../Components/Hover.css'

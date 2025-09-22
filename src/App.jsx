@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+  
     <CartContext.Provider value={{cart, setCart, handleAddToCartToasfy}}>
 
     <Header count={cart.length}/>

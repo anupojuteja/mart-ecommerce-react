@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import './ProductDetails.css'
 import { Suggestedproducts, SuggistedProduct } from "./SuggestedProducts";
 import { useContext } from 'react';
-import { CartContext } from './CartContext';
+import { CartContext } from './CartContext.jsx';
 import { BanerPage } from "./BanerPage";
 import { toast, ToastContainer } from "react-toastify";
 
