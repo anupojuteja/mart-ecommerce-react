@@ -101,7 +101,7 @@ export const Product = ({ id, imgUrl, productName, price }) => {
 //               }
 //             }}
 //           >
-//             <i className="fa-solid fa-plus"></i>
+//             <i className="fa-solid fa-plus"></i> //
 //           </button>
 //         </div>
 //       </div>
