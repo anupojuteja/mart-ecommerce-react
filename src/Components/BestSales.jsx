@@ -1,4 +1,4 @@
-import '../Componets/BestSales.css'
+import '../Components/BestSales.css'
 import { sofa } from "../assets/filterArray"
 import { ProductsCardNewBest } from "./ProductsCardNewBest"
 
