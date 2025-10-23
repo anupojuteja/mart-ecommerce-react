@@ -1,0 +1,15 @@
+.productsContainerBestSales{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    gap: 20px;
+    background-color: #b8f0f030;
+}
+.NameBestSales{
+    margin-bottom:0%;
+    text-align: center;
+    padding-top: 60px;
+    background-color: #b8f0f030;
+}
