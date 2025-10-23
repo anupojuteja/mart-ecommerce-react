@@ -4,7 +4,8 @@ import  Header from './Components/Header'
 import { Shop } from './Components/Shop'
 import { Cart } from './Components/Cart'
 import { Footer } from './Components/Footer'
-import { Productdetails } from './Components/ProductDetails'
+import { ProductDetails } from './Components/ProductDetails'
+
 import { CartContext } from './Components/CartContext'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
@@ -30,7 +31,7 @@ function App() {
       <Route path='/shop' element={<Shop toasfy={handleAddToCartToasfy()}/>} />
       <Route path='/cart' element={<Cart toasfy={handleAddToCartToasfy()}/>}/>
       {/* <Route path='/:id' element={<Productdetails toasfy={handleAddToCartToasfy()}/>}/> */}
-      <Route path='/product/:id' element={<Productdetails toasfy={handleAddToCartToasfy}/>}/>
+      <Route path='/product/:id' element={<ProductDetails toasfy={handleAddToCartToasfy}/>}/>
 
     </Routes>
     <Footer/>

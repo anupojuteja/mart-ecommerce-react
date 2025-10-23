@@ -1,6 +1,6 @@
 import { Carousel } from "./Carousel"
 import { Servicedata } from "./ServiceData"
-import { Bigdiscount } from "./Bigdiscount"
+import { BigDiscount } from "./BigDiscount"
 import { NewArrivals } from "./NewArrivals"
 import { BestSales } from "./BestSales"
 import { ToastContainer } from "react-toastify"
@@ -11,7 +11,7 @@ export const Homepage=()=>{
         <ToastContainer position="top-right" autoClose={2000}/>
         <Carousel/><br/>
         <Servicedata/><br/>
-        <Bigdiscount/><br/>
+        <BigDiscount/><br/>
         <NewArrivals/><br/>
         <BestSales/>
         </>

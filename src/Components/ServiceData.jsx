@@ -1,5 +1,5 @@
 // named function 
-import { serviceData } from "../assets/products"
+import { serviceData } from "../assets/Products"
 import '../Components/ServiceData.css'
 
 export const Servicedata = () => {

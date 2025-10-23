@@ -1,7 +1,7 @@
 .SuggestedproductsName{
     margin:30px 0px;
 }
-.suggistedContainer{
+.suggestedContainer{
     display: flex;
     justify-content: center;
     align-items: center;
