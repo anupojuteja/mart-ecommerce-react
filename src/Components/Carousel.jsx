@@ -1,4 +1,4 @@
-import { SliderData } from "../assets/products";
+import { SliderData } from "../assets/Products"
 import "../Components/Carousel.css";
 
 
