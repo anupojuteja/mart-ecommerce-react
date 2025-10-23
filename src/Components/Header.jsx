@@ -1,28 +1,25 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import logo from '../assets/Images/AchieversIT.png'
-
-
-const Header = ({count}) => {
-  return (
-    <>
-    <div className='HeaderContainer'>
-        <div className='HeaderLogo'>
-            <img src={logo} alt="logo" />
+import { Link } from 'react-router-dom'
+import logo from '../assets/Images/achieversIT.png'
+import '../Components/Header.css'
+export const Header = ({cout})=>{
+    return(
+        <>
+        <div className='headerContainer'>
+            <div className='headerImage'>
+                <img src={logo} alt="Logo" />
+            </div>
+            <div>
+                <nav>
+                    <ul className='headerLinks'>
+                        <li><Link to={'/home'} className='Links'>Home</Link></li>
+                        <li><Link to={'/shop'} className='Links'>Shop</Link></li>
+                        <li><Link to={'/cart'} className='Links'>Cart</Link></li>
+                        <li><i className="fa-solid fa-user"></i></li>
+                        <li className='cartLogoCount'><Link to={'/cart'} className='Links'><i className="fa-solid fa-cart-shopping"></i><sup className='countValue'>{cout}</sup></Link></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div className=' HeaderTitle'>
-            <nav> 
-                <ul className='Cards'>
-                    <Link to={'/home'}><li>Home</li></Link>
-                    <p>thebjdbj</p>
-                    
-                </ul>
-            </nav>
-        </div>
-    </div>
-    </>
-
-  )
+        </>
+    )
 }
-
-export default Header;

@@ -4,17 +4,18 @@ import './Hover.css'
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
 import { toast } from 'react-toastify';
+
 export const ProductsCardNewBest = (props) => {
-    const [cart,setCart]=useContext(CartContext);
-    const handleAddToCartToasfy=()=>{
-        toast.success('Product has been added to cart!')
-    }
+    const { cart, setCart, handleAddToCartToasfy } = useContext(CartContext);
+
     return (
         <div className="productCard">
-            <Link to={`/${props.id}`} ><div className='productCardImage'>
-                <img src={props.imgUrl} alt={props.productName} />
-                <div className='poductCardLikeIcon'><i class="fa-regular fa-heart"></i></div>
-            </div></Link>
+            <Link to={`/${props.id}`}>
+                <div className='productCardImage'>
+                    <img src={props.imgUrl} alt={props.productName} />
+                    <div className='poductCardLikeIcon'><i className="fa-regular fa-heart"></i></div>
+                </div>
+            </Link>
             <div className='productDetails'>
                 <h2>{props.productName}</h2>
                 <span>
@@ -27,22 +28,25 @@ export const ProductsCardNewBest = (props) => {
                 <h3>${props.price}</h3>
                 <div className='productDetailsButton'>
                     <button
-                    onClick={()=>{
-                        const existingProductIndex=cart.findIndex(p=>p.id===props.id);
+                        onClick={() => {
+                            const existingProductIndex = cart.findIndex(p => p.id === props.id);
 
-                        if(existingProductIndex !==-1){
-                            const updatedCart = [...cart];
-                            updatedCart[existingProductIndex].quantity=(updatedCart[existingProductIndex].quantity||1)+1;
-                            setCart(updatedCart);
-                            handleAddToCartToasfy()
-                        }else{
-                            setCart([...cart,{...props,quantity:1}]);
-                        }
-                    }}
-                    className='pulseBtnHover'
-                    ><i className="fa-solid fa-plus"></i></button>
+                            if (existingProductIndex !== -1) {
+                                const updatedCart = [...cart];
+                                updatedCart[existingProductIndex].quantity = (updatedCart[existingProductIndex].quantity || 1) + 1;
+                                setCart(updatedCart);
+                                handleAddToCartToasfy();
+                            } else {
+                                setCart([...cart, { ...props, quantity: 1 }]);
+                                handleAddToCartToasfy();
+                            }
+                        }}
+                        className='pulseBtnHover'
+                    >
+                        <i className="fa-solid fa-plus"></i>
+                    </button>
                 </div>
             </div>
         </div>
-    );  
+    );
 }
